@@ -238,8 +238,8 @@ h2 {
     height: 16em;
 }
 .about-img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    min-height: 16em;
 }
 .flickity-page-dots .dot {
     width: 10px;
