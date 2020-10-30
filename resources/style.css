@@ -127,7 +127,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 1.8em;
 }
 .services {
     width: 80%;
@@ -156,7 +156,7 @@ h2 {
 
 
 /****************   REVIEWS   ****************/
-.services-slider-container {
+.reviews-slider-container {
     width: 100%;
     height: 16em;
     background-image: url('images/sunset.jpg');
@@ -166,7 +166,7 @@ h2 {
     background-position: 70% 52%;
     /*padding: 4em 0 2em 0;*/
 }
-.services-carousel {
+.reviews-carousel {
     width: 100%;
     height: 16em;
 }
@@ -198,8 +198,7 @@ h2 {
 .flickity-page-dots .dot.is-selected {
     background: #e8e3dc;
 }
-.services-p {
-    /*padding-bottom: 1em;*/
+.reviews-p {
     color: white;
     text-align: center;
     margin: 0 1em;
@@ -213,6 +212,15 @@ h2 {
     width: 100%;
     height: auto;
     /*padding: 4em 0 2em 0;*/
+}
+.about-container h4 {
+    text-align: center;
+    color: #4c5053;
+}
+.about-info p {
+    color: #4c5053;
+    line-height: 1.5em;
+    margin: 1.5em 1.5em 3em 1.5em;
 }
 
   /**********   END ABOUT SECTION   **********/
