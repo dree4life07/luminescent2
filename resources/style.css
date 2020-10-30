@@ -134,7 +134,7 @@ h1{
 }
 h2 {
     width: 100%;
-    padding: 2em 0 1.5em 0;
+    padding: 2em 0 0 0;
     font-weight: 700;
     font-size: 1.3em;
     color: #4c5053;
@@ -144,6 +144,7 @@ h2 {
     list-style-position: inside;
     text-indent: -1.5em; 
     margin-left: 1.5em;
+    padding-top: 1.5em;
 }
 .services ul li {
     padding-bottom: 1.2em;
@@ -157,111 +158,53 @@ h2 {
 /****************   REVIEWS   ****************/
 .slider-container {
     width: 100%;
+    height: auto;
     background-image: url('images/sunset.jpg');
     /*background-color: cornflowerblue;*/
     background-size: 250%;
     background-repeat: no-repeat;
     background-position: 70% 52%;
-    padding: 4em 0 .75em 0;
+    padding: 4em 0 2em 0;
 }
-#slider {
-    /*margin: 0 auto;*/
-    /*width: 800px;*/
-    height: auto;
-    /*max-width: 100%;*/
+.services-carousel {
     width: 100%;
-    text-align: center;
-    color: #fff;
-    font-size: 1em;
-    /*padding: 1em 0;*/
-    /*background-color: darkcyan;*/
- }
- #slider input[type=radio] {
-    display: none;
- }
- #slider label {
-    cursor:pointer;
-    text-decoration: none;
- }
- #slides {
-    padding: 0 1em;
-    position: relative;
-    z-index: 1;
- }
- #overflow {
-    width: 100%;
-    overflow: hidden;
- }
- #slide1:checked ~ #slides .inner {
-    margin-left: 0;
- }
- #slide2:checked ~ #slides .inner {
-    margin-left: -100%;
- }
- #slide3:checked ~ #slides .inner {
-    margin-left: -200%;
- }
- #slide4:checked ~ #slides .inner {
-    margin-left: -300%;
- }
- #slides .inner {
-    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-    width: 400%;
-    /*line-height: 1.75em;*/
-    /*height: auto;*/
-    /*padding-top: 5em;*/
- }
- #slides .slide {
-    width: 25%;
-    float:left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: auto;
- }
- .slide {
-    line-height: 1.5em;
-    /*background-color: darkgoldenrod;*/
-    margin-bottom: 2em;
- }
- /*#slides .slide_1 {
-    background: transparent;
- }
- #slides .slide_2 {
-    background: transparent;
- }
- #slides .slide_3 {
-    background: transparent;
- }
- #slides .slide_4 {
-    background: transparent;
- }*/
- #bullets label {
-    transition: opacity 0.2s ease-out;
-    display: none;
-    opacity: .4;
- }
- #bullets label:hover {
-    opacity: 1;
- }
- #bullets {
-    /*margin: 0;*/
-    text-align: center;
-    /*padding-bottom: 1em;*/
-    /*background-color: darkmagenta;*/
- }
- #bullets label {
-    display: inline-block;
+}
+.carousel-cell {
+    width: 100%;
+    height: auto;
+    /*counter-increment: carousel-cell;*/
+}
+.carousel-cell:before{
+    /*display: block;*/
+    /*text-align: center;*/
+    /*content: counter(carousel-cell);*/
+    /*line-height: 400px;*/
+    /*font-size: 80px;*/
+    /*color: white;*/
+}
+.flickity-page-dots .dot {
     width: 10px;
     height: 10px;
-    border-radius:100%;
+    opacity: 1;
+    background: #e8e3dc71;
+    border-radius: 100%;
+  }
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
     background: #e8e3dc;
-    margin: 0 10px;
- }
- #slide1:checked ~ #bullets label:nth-child(1),
- #slide2:checked ~ #bullets label:nth-child(2),
- #slide3:checked ~ #bullets label:nth-child(3),
- #slide4:checked ~ #bullets label:nth-child(4) {
-    background: #9e9b97;
- }
- /**************   END REVIEWS   **************/
+}
+.services-p {
+    padding-bottom: 1em;
+    color: white;
+    text-align: center;
+    margin: 0 1em;
+    line-height: 1.5em;
+}
+/**************   END REVIEWS   **************/
+
+
+/*************   ABOUT SECTION   *************/
+
+
+  /**********   END ABOUT SECTION   **********/

@@ -7,6 +7,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/flickity.css" media="screen">
+    <script src="resources/flickity.pkgd.min.js"></script>
+    <script src="resources/jquery-3.3.1.js"></script>
 </head>
 <body>
     <!-- header start -->
@@ -62,67 +65,39 @@
 
     <!-- slider start -->
     <div class="slider-container">
-        <div id="slider">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
-            <input type="radio" name="slider" id="slide5">
-            <div id="slides">
-                <div id="overflow">
-                    <div class="inner">
-                        <!-- slide 1 -->
-                        <div class="slide slide_1">
-                            <div class="slide-content">
-                                <p>"Wow what great service, I love it! I'd be lost without Luminescent Psychiatric Care."<br>- Pepita H.</p>
-                            </div>
-                        </div>
-                        <!-- slide 1 end -->
-
-                        <!-- slide 2 -->
-                        <div class="slide slide_2">
-                            <div class="slide-content">
-                                <p>"I couldn't have asked for more. I don't know what else to say. Luminescent Psychiatric Care is worth much more than I paid."<br>- Rowland O.</p>
-                            </div>
-                        </div>
-                        <!-- slide 2 end -->
-
-                        <!-- slide 3 -->
-                        <div class="slide slide_3">
-                            <div class="slide-content">
-                                <p>"Claudia is so personal and professional. Her expertise has sincerely helped my life."<br>- Andrew W.</p>
-                            </div>
-                        </div>
-                        <!-- slide 3 end -->
-
-                        <!-- slide 4 -->
-                        <div class="slide slide_4">
-                            <div class="slide-content">
-                                <p>"This is something I didn't think I needed but Claudia has helped me realize so much after scratching the surface."<br>- Jane L.</p>
-                            </div>
-                        </div>
-                        <!-- slide 4 end -->
-
-                        <!-- slide 5 
-                        <div class="slide slide_5">
-                            <div class="slide-content">
-                                <p>"Couldn't be happier that I chose Luminescent Care. I would recommend Claudia to anyone"<br>- Pete R.</p>
-                            </div>
-                        </div>
-                        slide 5 end -->
-                    </div>
-                </div>
+        <div class="services-carousel" data-flickity='{ "wrapAround": true, "draggable": true, "contain": true, "prevNextButtons": false }'>
+            <div class="carousel-cell">
+                <p class="services-p">"Wow what great service, I love it! I'd be lost without Luminescent Psychiatric Care."<br>- Pepita H.</p>
             </div>
-                <div id="bullets">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                    <label for="slide5"></label>
-                </div>
+            <div class="carousel-cell">
+                <p class="services-p">"I couldn't have asked for more. I don't know what else to say. Luminescent Psychiatric Care is worth much more than I paid."<br>- Rowland O.</p>
+            </div>
+            <div class="carousel-cell">
+                <p class="services-p">"Claudia is so personal and professional. Her expertise has sincerely helped my life."<br>- Andrew W.</p></div>
+            <div class="carousel-cell">
+                <p class="services-p">"This is something I didn't think I needed but Claudia has helped me realize so much after scratching the surface."<br>- Jane L.</p>
+            </div>
+            <div class="carousel-cell">
+                <p class="services-p">"Couldn't be happier that I chose Luminescent Care. I would recommend Claudia to anyone"<br>- Pete R.</p>
+            </div>
         </div>
     </div>
     <!-- slider end -->
+
+    <!-- about section -->
+    <div class="about-container">
+        <h2>Claudia R. Crenshaw</h2>
+        <h4>PhD, APRN</h4>
+        <div class="about">
+            <p>Dr. Crenshaw is pleased to announce the opening of her psychotherapy practice in Morgan Country after working in Decatur for over 30 years.<br><br>She believes everyone has an intrinsic nature and the internal resources to heal. Specializing in trauma, loss, anxiety, depression, addiction, communication and relationships, Dr. Crenshaw has a unique ability to find the root issue and help her clients get back on track as an advanced psychiatric clinical nurse specialist and licensed professional counselor.<br><br>With three adult daughters, a loving partner, four young grandsons and two lively grand-puppies, she enjoys all outdoor activities, her garden, the peacefulness of Lake Oconee and the opportunity to serve her community.</p>
+        </div>
+    </div>
+    <!-- about slider start -->
+       
+    
+    <!-- about slider end -->
+   
+    <!-- about section end  -->
 
 
 </body>
