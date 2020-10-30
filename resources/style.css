@@ -156,23 +156,25 @@ h2 {
 
 
 /****************   REVIEWS   ****************/
-.slider-container {
+.services-slider-container {
     width: 100%;
-    height: auto;
+    height: 16em;
     background-image: url('images/sunset.jpg');
     /*background-color: cornflowerblue;*/
     background-size: 250%;
     background-repeat: no-repeat;
     background-position: 70% 52%;
-    padding: 4em 0 2em 0;
+    /*padding: 4em 0 2em 0;*/
 }
 .services-carousel {
     width: 100%;
-    height: auto;
+    height: 16em;
 }
 .carousel-cell {
     width: 100%;
-    height: auto;
+    height: 16em;
+    display: flex;
+    align-items: center;
     /*counter-increment: carousel-cell;*/
 }
 .carousel-cell:before{
@@ -183,6 +185,9 @@ h2 {
     /*font-size: 80px;*/
     /*color: white;*/
 }
+.flickity-page-dots {
+    bottom: .5em;
+  }
 .flickity-page-dots .dot {
     width: 10px;
     height: 10px;
@@ -190,12 +195,11 @@ h2 {
     background: #e8e3dc71;
     border-radius: 100%;
   }
-/* fill-in selected dot */
 .flickity-page-dots .dot.is-selected {
     background: #e8e3dc;
 }
 .services-p {
-    padding-bottom: 1em;
+    /*padding-bottom: 1em;*/
     color: white;
     text-align: center;
     margin: 0 1em;
@@ -205,6 +209,10 @@ h2 {
 
 
 /*************   ABOUT SECTION   *************/
-
+.about-container {
+    width: 100%;
+    height: auto;
+    /*padding: 4em 0 2em 0;*/
+}
 
   /**********   END ABOUT SECTION   **********/
