@@ -97,22 +97,41 @@ nav ul li a:hover, nav ul li a:focus {
     background-repeat: no-repeat;
     background-position: 60% 25%;
     width: 100%;
+    padding: 3em 0;
 }
 h1{
     font-size: 1.5em;
     text-align: left;
     color: #fff;
-    padding: 2em 1em;
+    padding: 0 1em 1.5em 1em;
     line-height: 1.4;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .button-container{
     display: flex;
     justify-content: center;
+    align-content: center;
     width: 100%;
-    height: 6.5em;
 }
 .banner-button {
+    padding: 1em;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.banner-button:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #4c5053;
+}
+
+/*.banner-button {
     background-color: #fff;
     border: none;
     border-radius: 5px;
@@ -124,8 +143,13 @@ h1{
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    /*display: inline-block;*/
+    /*display: inline-block;
 }
+.banner-button:hover {
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+}*/
 /*****************   BANNER   *****************/
 
 
@@ -298,12 +322,12 @@ th {
 .request {
     font-size: .85em;
 }
-.call-button {
+a.call-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f3f3f3;
-    border: none;
+    background-color: transparent;
+    border: 1px solid #4c5053;
     border-radius: 5px;
     height: 50px;
     padding: 1em 1.5em;
@@ -313,8 +337,18 @@ th {
     text-decoration: none;
     cursor: pointer;
     margin-bottom: 1.5em;
+    transition: 1s;
 }
-.email-button {
+a.call-button:hover {
+    background-color: #f3f3f3;
+    border: 1px solid #4c5053;
+    color: white !important;
+}
+.call-info {
+    font-size: .8em;
+}
+
+a.email-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,10 +363,13 @@ th {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    transition: 1s;
 }
-.call-info {
-    font-size: .8em;
+a.email-button:hover {
+    background-color: #d3d3d3;
+    border: none;
 }
+
 .email-info {
     font-size: .8em;
     padding-left: 10px;
