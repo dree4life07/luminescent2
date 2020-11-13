@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 1em 0 1em;
+    margin: 0 1em;
 }
 .logo-img {
     height: 3em;
@@ -130,26 +130,6 @@ h1{
     border: 1px solid white;
     color: #4c5053;
 }
-
-/*.banner-button {
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    height: 3em;
-    padding: 1em;
-    font-size: 1em;
-    font-weight: 700;
-    color: #4c5053;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    /*display: inline-block;
-}
-.banner-button:hover {
-    background-color: transparent;
-    border: 3px solid white;
-    color: white;
-}*/
 /*****************   BANNER   *****************/
 
 
@@ -215,15 +195,6 @@ h2 {
     height: 16em;
     display: flex;
     align-items: center;
-    /*counter-increment: carousel-cell;*/
-}
-.reviews-carousel-cell:before{
-    /*display: block;*/
-    /*text-align: center;*/
-    /*content: counter(carousel-cell);*/
-    /*line-height: 400px;*/
-    /*font-size: 80px;*/
-    /*color: white;*/
 }
 .flickity-page-dots {
     bottom: .5em;
@@ -307,7 +278,7 @@ h2 {
     color: #4c5053;
 }
 table {
-    width: 160px;;
+    width: 160px;
     margin-bottom: 1.5em;
 }
 th {
@@ -337,23 +308,21 @@ a.call-button {
     text-decoration: none;
     cursor: pointer;
     margin-bottom: 1.5em;
-    transition: 1s;
+    transition: .3s;
 }
 a.call-button:hover {
-    background-color: #f3f3f3;
-    border: 1px solid #4c5053;
-    color: white !important;
+    background-color: #d3d3d3;
+    border: 1px solid #d3d3d3;
 }
 .call-info {
-    font-size: .8em;
-}
+    font-size: .8em;}
 
 a.email-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f3f3f3;
-    border: none;
+    background-color: transparent;
+    border: 1px solid #4c5053;
     border-radius: 5px;
     height: 50px;
     padding: 1em 1.5em;
@@ -363,11 +332,11 @@ a.email-button {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    transition: 1s;
+    transition: .3s;
 }
 a.email-button:hover {
     background-color: #d3d3d3;
-    border: none;
+    border: 1px solid #d3d3d3;
 }
 
 .email-info {
@@ -381,7 +350,6 @@ a.email-button:hover {
     width: 100%;
     height: 16em;
     background-image: url('images/map.jpg');
-    /*background-color: cornflowerblue;*/
     background-size: 220%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -411,3 +379,56 @@ footer {
     font-size: .4;
 }
 /**********   END FOOTER SECTION   **********/
+
+
+
+
+/**********   SCREEN >320px   **********/
+@media only screen and (min-width: 320px) {
+
+    /**********   NAVIGATION   **********/
+    .menu-wrap {
+        margin: 0 1.5em;
+    }
+    .logo-img {
+        height: 3.2em;
+    }
+    .menu-icon {
+        font-size: 1.4em;
+    }
+    /**********   END NAVIGATION   **********/
+
+    /**********   BANNER   **********/
+    .banner {
+        background-position: 70% 30%;
+        width: 100%;
+        padding: 3em 0;
+    }
+    /**********   END BANNER   **********/
+
+    /**********   GET IN TOUCH   **********/
+    table {
+        width: 180px;
+    }
+    .touch-line-one {
+        padding-left: 10px;
+    }
+    .touch-line-one-b {
+        padding-left: 10px;
+    }
+    .touch-line-two {
+        padding-left: 10px;
+    }
+    .request {
+        padding-left: 10px;
+    }
+    /**********   END GET IN TOUCH   **********/
+
+    /**********   MAP   **********/
+    .map-container {
+        background-size: 220%;
+        background-repeat: no-repeat;
+        background-position: 55% 60%;
+    }
+    /**********   END MAP   **********/
+}
