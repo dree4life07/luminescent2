@@ -282,6 +282,9 @@ th {
 .touch-line-one {
     padding-top: .6em;
 }
+.touch-line-one-b {
+    line-height: 1.5em;
+}
 .touch-line-two {
     padding-top: .6em;
     text-decoration: none;
@@ -434,6 +437,12 @@ footer {
 /**********   SCREEN >360px   **********/
 @media only screen and (min-width: 360px) {
 
+    /**********   GENERAL   **********/
+    h2 {
+        font-size: 1.5em;
+    }
+    /**********   END GENERAL   **********/
+
     /**********   NAVIGATION   **********/
     .menu-wrap {
         margin: 0 1.8em;
@@ -490,6 +499,7 @@ footer {
     /**********   GET IN TOUCH   **********/
     .location, .hours {
         width: 190px;
+        font-size: 1.1em;
     }
     .touch-line-one {
         padding-left: 15px;
