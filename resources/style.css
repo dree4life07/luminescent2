@@ -114,7 +114,8 @@ h1{
     width: 100%;
 }
 .banner-button {
-    padding: 1em;
+    height: 50px;
+    padding: 16px 24px;
     border: 1px solid white;
     color: white;
     border-radius: 5px;
@@ -217,6 +218,8 @@ h2 {
 /**************   END REVIEWS   **************/
 
 
+
+
 /*************   ABOUT SECTION   *************/
 .about-container {
     width: 100%;
@@ -257,11 +260,14 @@ h2 {
 }
 /**********   END ABOUT SECTION   **********/
 
+
+
+
 /**********   GET IN TOUCH SECTION   **********/
 .touch-container {
     width: 100%;
     height: auto;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 .touch {
     display: flex;
@@ -273,26 +279,32 @@ h2 {
     color: #4c5053;
 }
 .location, .hours {
-    width: 160px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 1.5em;
 }
 th {
     text-align: center;
 }
-.touch-line-one {
+.location tr {
+    text-align: center;
+}
+.touch-line-address,
+.touch-line-tuesday,
+.touch-line-saturday {
     padding-top: .6em;
 }
-.touch-line-one-b {
+.touch-line-town {
     line-height: 1.5em;
 }
-.touch-line-two {
-    padding-top: .6em;
-    text-decoration: none;
+.touch-line-time {
+    padding-left: 30px;
 }
 .request {
     font-size: .85em;
 }
-a.call-button {
+a.touch-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,32 +312,8 @@ a.call-button {
     border: 1px solid #4c5053;
     border-radius: 5px;
     height: 50px;
-    padding: 1em 1.5em;
-    font-weight: 700;
-    color: #4c5053;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-bottom: 1.5em;
-    transition: .3s;
-}
-a.call-button:hover {
-    background-color: #d3d3d3;
-    border: 1px solid #d3d3d3;
-}
-.call-info {
-    font-size: .8em;}
-
-a.email-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: 1px solid #4c5053;
-    border-radius: 5px;
-    height: 50px;
-    padding: 1em 1.5em;
-    font-size: 1.3em;
+    padding: 16px 24px;
+    font-size: 12px;
     font-weight: 700;
     color: #4c5053;
     text-align: center;
@@ -333,16 +321,17 @@ a.email-button {
     cursor: pointer;
     transition: .3s;
 }
-a.email-button:hover {
+a.call-touch:hover {
     background-color: #d3d3d3;
     border: 1px solid #d3d3d3;
 }
-
-.email-info {
-    font-size: .8em;
-    padding-left: 10px;
+.button-info {
+    font-size: 16px;
 }
 /**********   END GET IN TOUCH SECTION   **********/
+
+
+
 
 /**********   MAP SECTION   **********/
 .map-container {
@@ -354,6 +343,9 @@ a.email-button:hover {
     background-position: 50% 50%;
 }
 /**********   END MAP SECTION   **********/
+
+
+
 
 /**********   FOOTER SECTION   **********/
 footer {
@@ -404,24 +396,6 @@ footer {
         padding: 3em 0;
     }
     /**********   END BANNER   **********/
-
-    /**********   GET IN TOUCH   **********/
-    .location, .hours {
-        width: 180px;
-    }
-    .touch-line-one {
-        padding-left: 10px;
-    }
-    .touch-line-one-b {
-        padding-left: 10px;
-    }
-    .touch-line-two {
-        padding-left: 10px;
-    }
-    .request {
-        padding-left: 10px;
-    }
-    /**********   END GET IN TOUCH   **********/
 
     /**********   MAP   **********/
     .map-container {
@@ -496,25 +470,6 @@ footer {
     }
     /**********   END ABOUT   **********/
 
-    /**********   GET IN TOUCH   **********/
-    .location, .hours {
-        width: 200px;
-        font-size: 1.1em;
-    }
-    .touch-line-one {
-        padding-left: 15px;
-    }
-    .touch-line-one-b {
-        padding-left: 15px;
-    }
-    .touch-line-two {
-        padding-left: 15px;
-    }
-    .request {
-        padding-left: 15px;
-    }
-    /**********   END GET IN TOUCH   **********/
-
     /**********   MAP   **********/
     .map-container {
         background-position: 55% 64%;
@@ -534,6 +489,14 @@ footer {
         height: 3.5em;
     }
     /**********   END NAVIGATION   **********/
+
+
+    /**********   GET IN TOUCH   **********/
+    a.call-button, .menu-icon, .call-info, {
+        font-size: 16px;
+    }
+    /**********   END GET IN TOUCH   **********/
+
 
     /**********   MAP   **********/
     .map-container {
@@ -575,5 +538,17 @@ footer {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     /**********   END BANNER   **********/
+
+    /**********   REVIEWS   **********/
+    .reviews-slider-container {
+        background-position: 70% 58%;
+    }
+    /**********   END REVIEWS   **********/
+
+    /**********   ABOUT   **********/
+    .about-img {
+        height: 19.5em;
+    }
+    /**********   END ABOUT   **********/
 }
 /**********   END SCREEN >400px   **********/
