@@ -457,6 +457,12 @@ footer {
     }
     /**********   END BANNER   **********/
 
+    /**********   SERVICES   **********/
+    .services ul li {
+        font-size: 1.1em;
+    }
+    /**********   END SERVICES   **********/
+
     /**********   REVIEWS   **********/
     .reviews-slider-container {
         background-position: 70% 56%;
