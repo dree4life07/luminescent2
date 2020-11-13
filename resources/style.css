@@ -272,7 +272,7 @@ h2 {
     padding: 1.5em 0 0 0;
     color: #4c5053;
 }
-table {
+.location, .hours {
     width: 160px;
     margin-bottom: 1.5em;
 }
@@ -402,7 +402,7 @@ footer {
     /**********   END BANNER   **********/
 
     /**********   GET IN TOUCH   **********/
-    table {
+    .location, .hours {
         width: 180px;
     }
     .touch-line-one {
@@ -476,12 +476,12 @@ footer {
     }
     .about-img {
         width: auto;
-        height: 17em;
+        height: 18em;
     }
     /**********   END ABOUT   **********/
 
     /**********   GET IN TOUCH   **********/
-    table {
+    .location, .hours {
         width: 190px;
     }
     .touch-line-one {
@@ -501,6 +501,26 @@ footer {
     /**********   MAP   **********/
     .map-container {
         background-position: 55% 64%;
+    }
+    /**********   END MAP   **********/
+}
+/**********   END SCREEN >360px   **********/
+
+
+
+
+/**********   SCREEN >375px   **********/
+@media only screen and (min-width: 375px) {
+
+    /**********   NAVIGATION   **********/
+    .logo-img {
+        height: 3.5em;
+    }
+    /**********   END NAVIGATION   **********/
+
+    /**********   MAP   **********/
+    .map-container {
+        background-position: 55% 68%;
     }
     /**********   END MAP   **********/
 }
