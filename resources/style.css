@@ -498,7 +498,7 @@ footer {
 
     /**********   GET IN TOUCH   **********/
     .location, .hours {
-        width: 190px;
+        width: 200px;
         font-size: 1.1em;
     }
     .touch-line-one {
@@ -541,3 +541,39 @@ footer {
     }
     /**********   END MAP   **********/
 }
+/**********   END SCREEN >375px   **********/
+
+
+
+
+/**********   SCREEN >400px   **********/
+@media only screen and (min-width: 400px) {
+
+    /**********   NAVIGATION   **********/
+    .menu-wrap {
+        margin: 0 2.5em;
+    }
+    .logo-img {
+        height: 3.4em;
+    }
+    .menu-icon {
+        font-size: 1.6em;
+    }
+    /**********   END NAVIGATION   **********/
+
+    /**********    BANNER   **********/ 
+    .banner {
+        background-position: 60% 25%;
+        width: 100%;
+    }
+    h1{
+        font-size: 2em;
+        text-align: left;
+        color: #fff;
+        padding: 0 1.5em 1.5em 1.5em;
+        line-height: 1.5;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    /**********   END BANNER   **********/
+}
+/**********   END SCREEN >400px   **********/
