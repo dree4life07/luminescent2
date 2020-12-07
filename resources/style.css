@@ -37,11 +37,12 @@ header {
     font-size: 1.25em;
     color: #4c5053;
     line-height: 50px;
+    cursor: pointer;
 }
 nav {
     position: absolute;
     background-color: #fff;
-    top: 4.5em;
+    top: 6em;
     left:0;
     width: 100%;
 }
@@ -71,6 +72,9 @@ nav ul li a:hover, nav ul li a:focus {
     max-height: 250px;
     padding: 15px 0;
     transition: all 0.5s;
+}
+.no-hamburger {
+    display: none;
 }
         /**********   ANCHOR POINT   **********/
         a.anchor {
@@ -131,7 +135,7 @@ h1{
     border: 1px solid white;
     color: #4c5053;
 }
-/*****************   BANNER   *****************/
+/*****************  END BANNER   *****************/
 
 
 
@@ -145,13 +149,14 @@ h1{
     flex-wrap: wrap;
     padding-bottom: 3em;
     background-color: #f3f3f3;
+    padding-top: 2em;
 }
 .services {
     width: 80%;
 }
 h2 {
     width: 100%;
-    padding: 2em 0 0 0;
+    /*padding: 2em 0 0 0;*/
     font-weight: 700;
     font-size: 1.3em;
     color: #4c5053;
@@ -195,6 +200,7 @@ h2 {
     height: 16em;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .flickity-page-dots {
     bottom: .5em;
@@ -212,8 +218,9 @@ h2 {
 .reviews-p {
     color: white;
     text-align: center;
-    margin: 0 1em;
+    /*margin: 0 1em;*/
     line-height: 1.5em;
+    width: 90%;
 }
 /**************   END REVIEWS   **************/
 
@@ -226,6 +233,9 @@ h2 {
     height: auto;
     background-color: #f3f3f3;
 }
+.about-info h2 {
+    padding-top: 2em;
+}
 .about-info h4 {
     text-align: center;
     color: #4c5053;
@@ -236,7 +246,10 @@ h2 {
     margin: 1.5em 1.5em 3em 1.5em;
 }
 .about-slider-container {
-    height: 16em;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .about-carousel {
     width: 100%;
@@ -284,6 +297,9 @@ h2 {
     width: 100%;
     margin-bottom: 1.5em;
 }
+.touch h2 {
+    margin: 1em 0 1.5em 0;
+}
 th {
     text-align: center;
 }
@@ -304,6 +320,15 @@ th {
 .request {
     font-size: .85em;
 }
+.touch-button-container {
+    width: 100%;
+}
+.call-button-container, .email-button-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
 a.touch-button {
     display: flex;
     justify-content: center;
@@ -312,7 +337,7 @@ a.touch-button {
     border: 1px solid #4c5053;
     border-radius: 5px;
     height: 50px;
-    padding: 16px 24px;
+    width: 175px;
     font-size: 12px;
     font-weight: 700;
     color: #4c5053;
@@ -448,7 +473,7 @@ footer {
         background-position: 70% 56%;
     }
     .reviews-p {
-        margin: 0 1.8em;
+        /*margin: 0 1.8em;*/
         line-height: 1.6em;
         font-size: 17px;
     }
@@ -488,6 +513,13 @@ footer {
     /**********   END NAVIGATION   **********/
 
 
+    /**********   REVIEWS   **********/
+    .reviews-p {
+        width: 85%;
+    }
+    /**********   END REVIeWS   **********/
+
+
     /**********   GET IN TOUCH   **********/
     a.call-button, .menu-icon, .call-info, {
         font-size: 16px;
@@ -508,7 +540,6 @@ footer {
 
 /**********   SCREEN >400px   **********/
 @media only screen and (min-width: 400px) {
-
     /**********   NAVIGATION   **********/
     .menu-wrap {
         margin: 0 2.5em;
@@ -520,6 +551,9 @@ footer {
         font-size: 1.6em;
     }
     /**********   END NAVIGATION   **********/
+
+
+
 
     /**********    BANNER   **********/ 
     .banner {
@@ -536,11 +570,17 @@ footer {
     }
     /**********   END BANNER   **********/
 
+
+
+
     /**********   REVIEWS   **********/
     .reviews-slider-container {
         background-position: 70% 58%;
     }
     /**********   END REVIEWS   **********/
+
+
+
 
     /**********   ABOUT   **********/
     .about-img {
@@ -549,3 +589,501 @@ footer {
     /**********   END ABOUT   **********/
 }
 /**********   END SCREEN >400px   **********/
+
+
+
+
+/**********   SCREEN >500px   **********/
+@media only screen and (min-width: 500px) {
+    /**********   NAVIGATION   **********/
+        header {
+            height: 8em;
+        }
+        .menu {
+            height: 8em;
+        }
+        .menu-wrap {
+            margin: 0 3em;
+        }
+        .logo-img {
+            height: 5em;
+        }
+        .menu-icon {
+            font-size: 1.7em;
+        }
+        nav {
+            top: 8em;
+        }
+        nav ul li {
+            padding: 0 2.7em;
+        }
+        nav ul li a {
+            padding: .75 0em;
+            font-size: 20px;
+        }
+        #checkbox:checked ~ nav ul {
+            max-height: 300px;
+        }
+    /**********   END NAVIGATION   **********/
+
+
+
+    /*****************   BANNER   *****************/
+        .banner-container {
+            padding-top: 8em;
+        }
+        .banner {
+            background-size: 170%;
+            background-position: 60% 50%;
+            padding: 3em 0;
+        }
+        h1{
+            width: 90%;
+            font-size: 35px;
+        }
+        .button-container{
+            align-content: center;
+            padding-bottom: 1em;
+        }
+        .banner-button {
+            height: auto;
+            padding: 16px 24px;
+            font-size: 20px;
+        }
+    /*****************   BANNER   *****************/
+
+
+
+
+    /**********   REVIEWS   **********/
+        .reviews-slider-container {
+            height: 16em;
+            background-size: 250%;
+            background-repeat: no-repeat;
+            background-position: 70% 60%;
+        }
+    /**********   END REVIEWS   **********/
+
+
+
+
+    /**********   ABOUT   **********/
+        .about {
+            /*padding-bottom: 4em;*/
+        }
+        .about-slider-container {
+            padding-bottom: 4em;
+        }
+    /**********   END ABOUT   **********/
+
+
+
+
+    /**********   GET IN TOUCH   **********/
+    .touch h2 {
+        margin-top: 1em;
+    }
+    /**********   END GET IN TOUCH   **********/
+
+
+
+
+    /**********   MAP   **********/
+        .map-container {
+            background-size: 170%;
+            background-position: 52% 65%;
+        }
+    /**********   END MAP   **********/
+}
+/**********   END SCREEN >500px   **********/
+
+
+
+
+/**********   SCREEN >600px   **********/
+@media only screen and (min-width: 600px) {
+    /**********   BANNER   **********/
+        h1{
+            width: 90%;
+            font-size: 40px;
+        }
+    /**********   END BANNER   **********/
+
+
+
+    /**********   REVIEWS   **********/
+        .reviews-slider-container {
+            height: 16em;
+            background-size: 250%;
+            background-repeat: no-repeat;
+            background-position: 65% 62%;
+        }
+        .reviews-p {
+            font-size: 1.2em;
+        }
+    /**********   END REVIEWS   **********/
+
+
+
+    /**********   ABOUT   **********/
+        .about-info h2 {
+            padding-top: 0;
+            text-align: left;
+        }
+        .about-info h4 {
+            width: auto;
+            text-align: left;
+            color: #4c5053;
+        }
+        .about-info p {
+            margin: 0;
+            padding: 1.5em 0 0 0;
+        }
+        .about-slider-container {
+            display: block;
+            width: 100%;
+            height: auto;
+            float: left;
+            padding: 3em 2em;
+            background-color: #f3f3f3;
+        }
+        .about-carousel {
+            width: 250px;
+            height: 16em;
+            float: left;
+            padding-right: 1em;
+        }
+        .about-carousel-cell {
+            display: flex;
+            justify-content: center;
+            min-width: 250px;
+            height: 16em;
+        }
+        .about-img {
+            width: auto;
+            height: 16em;
+        }
+    /**********   END ABOUT   **********/
+
+
+
+
+    /**********   GET IN TOUCH SECTION   **********/
+        .location, .hours {
+            width: 45%;
+        }
+        .touch-button-container {
+            display: flex;
+            justify-content: center;
+        }
+        .call-button-container, .email-button-container {
+            width: 40%;
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+    /**********   END GET IN TOUCH SECTION   **********/
+
+
+
+
+    /**********   MAP SECTION   **********/
+        .map-container {
+            background-size: 160%;
+            background-position: 52% 68%;
+            }
+    /**********   END MAP SECTION   **********/
+}
+/**********   END SCREEN >600px   **********/
+
+
+
+
+/**********   SCREEN >700px   **********/
+@media only screen and (min-width: 700px) {
+    /*****************   BANNER   *****************/
+        .banner {
+            background-size: 160%;
+            background-position: 60% 50%;
+        }
+    /*****************   BANNER   *****************/
+
+
+
+
+    /**********   REVIEWS   **********/
+        .reviews-slider-container {
+            background-position: 70% 62%;
+        }
+        .reviews-p {
+            width: 75%;
+        }
+    /**********   END REVIEWS   **********/
+
+
+
+
+    /**********   MAP   **********/
+        .map-container {
+            background-size: 140%;
+            background-position: 52% 70%;
+            }
+    /**********   END MAP   **********/
+}
+/**********   END SCREEN >700px   **********/
+
+
+
+
+
+/**********   SCREEN >800px   **********/
+@media only screen and (min-width: 800px) {
+    /**********   BANNER   **********/
+        h1{
+            width: 95%;
+            font-size: 50px;
+        }
+        a.banner-button {
+            font-size: 1.5em;
+        }
+    /**********   END BANNER   **********/
+
+
+
+    /**********   SERVICES   **********/
+        h2 {
+            font-size: 1.8em;
+        }
+        .services ul li {
+            font-size: 1.2em;
+        }
+    /**********   END SERVICES   **********/
+
+
+
+    /**********   REVIEWS   **********/
+        .reviews-slider-container {
+            height: 20em;
+        }
+        .reviews-carousel {
+            height: 20em;
+        }
+        .reviews-carousel-cell {
+            height: 20em;
+        }
+        .flickity-page-dots {
+            bottom: .8em;
+        }
+        .flickity-page-dots .dot {
+            width: 12px;
+            height: 12px;
+        }
+        .reviews-p {
+            font-size: 1.2em;
+            line-height: 1.8em;
+        }
+    /**********   END REVIEWS   **********/
+
+
+
+
+    /**********   ABOUT   **********/
+        .about-info h4 {
+            font-size: 1.2em;
+        }
+        .about-info p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+        .about-carousel {
+            width: 325px;
+            height: 20em;
+        }
+        .about-carousel-cell {
+            min-width: 325px;
+            height: 20em;
+        }
+        .about-img {
+            height: 20em;
+        }
+    /**********   END ABOUT   **********/
+
+
+
+
+    /**********   GET IN TOUCH SECTION   **********/
+        .location, .hours {
+            width: 40%;
+        }
+        .location th, .hours th {
+            font-size: 1em;
+        }
+        .location, .hours {
+            font-size: 1.2em;
+        }
+        a.touch-button {
+            height: 60px;
+            width: 200px;
+            font-size: 12px;
+        }
+        .button-info {
+            font-size: 1em;
+        }
+        .request {
+            font-size: .8em;
+        }
+    /**********   END GET IN TOUCH SECTION   **********/
+
+
+
+
+    /**********   MAP   **********/
+        .map-container {
+            height: 20em;
+            background-size: 130%;
+            background-position: 52% 65%;
+        }
+    /**********   END MAP   **********/
+
+
+
+
+    /**********   FOOTER SECTION   **********/
+        .footer {
+            font-size: 14px;
+        }
+    /**********   END FOOTER SECTION   **********/
+}
+/**********   END SCREEN >800px   **********/
+
+
+
+
+
+/**********   SCREEN >1000px   **********/
+@media only screen and (min-width: 1000px) {
+    /*****************   NAVIGATION   *****************/
+        .menu {
+        }
+        label {
+            display: none;
+        }
+        nav {
+            width: auto;
+            position: static;
+        }
+        nav ul {
+            overflow: visible;
+            display: inline-flex;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            padding: 0;
+        }
+        nav ul li a {
+            padding: 0 20px;
+            font-size: 1.1em;
+        }
+        .hamburger {
+            display: none;
+        }
+        .no-hamburger {
+            display: inline;
+        }
+    /*****************   END NAVIGATION   *****************/
+
+
+    
+    /*****************   BANNER   *****************/
+        .banner {
+            background-size: 130%;
+            background-position: 70% 50%;
+            padding: 3em 0;
+        }
+        h1{
+            width: 95%;
+        }
+    /*****************  END BANNER   *****************/
+
+
+
+
+    /*****************   REVIEWS   *****************/
+        .reviews-p {
+            width: 65%;
+        }
+        .reviews-slider-container {
+            background-position: 60% 64%;
+        }
+    /*****************  END REVIEWS   *****************/
+
+
+
+
+    /**********   ABOUT   **********/
+        .about-info p {
+            line-height: 1.85em;
+        }
+        .about-carousel {
+            width: 400px;
+        }
+        .about-carousel-cell {
+            min-width: 400px;
+        }
+    /**********   END ABOUT   **********/
+
+
+
+
+    /**********   GET IN TOUCH SECTION   **********/
+        .location, .hours {
+            width: 30%;
+        }
+        .location th, .hours th {
+            font-size: 1em;
+        }
+        .location, .hours {
+            font-size: 1.2em;
+        }
+        .touch-button-container {
+            width: 30%;
+        }
+        .call-button-container, .email-button-container {
+            width: 100%;
+            display: block;
+        }
+        a.touch-button {
+            height: 60px;
+            width: 150px;
+            font-size: 12px;
+        }
+        .button-info {
+            font-size: 1em;
+        }
+        .request {
+            font-size: .8em;
+        }
+/**********   END GET IN TOUCH SECTION   **********/
+
+    /**********   FOOTER SECTION   **********/
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        background-color: #4c5053;
+        padding: 1.5em 0;
+    }
+    .footer {
+        width: 100%;
+        font-size: 14px;
+        color: #f3f3f3;;
+        font-weight: 300;
+        text-align: center;
+    }
+    .email {
+        margin: 1em 0;
+    }
+/**********   END FOOTER SECTION   **********/
+}
