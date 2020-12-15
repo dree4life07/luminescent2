@@ -1413,7 +1413,7 @@ footer {
     /**********   MAP SECTION   **********/
     .map-container {
         height: 34em;
-        background-size: 120%;
+        background-size: 100%;
         background-position: 52% 66%;
     }
     /**********   END MAP SECTION   **********/
@@ -1433,7 +1433,6 @@ footer {
     h1{
         width: 95%;
         font-size: 70px;
-        
     }
     .banner {
         /*background-size: 130%;
@@ -1446,8 +1445,6 @@ footer {
     /**********   MAP SECTION   **********/
     .map-container {
         height: 38em;
-        background-size: 120%;
-        background-position: 52% 66%;
     }
     /**********   END MAP SECTION   **********/
 }
