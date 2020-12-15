@@ -96,13 +96,19 @@ nav ul li a:hover, nav ul li a:focus {
     padding-top: 5.9em;
 }
 .banner {
-    background-image: url('images/canoe.jpg');
+    /*background-image: url('images/canoe.jpg');
     background-size: 220%;
     background-repeat: no-repeat;
     background-position: 60% 25%;
     width: 100%;
+    padding: 3em 0;*/
+    background-image: url('images/banner.jpg');
+    background-size: 230%;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    width: 100%;
     padding: 3em 0;
-}
+    }
 h1{
     font-size: 1.5em;
     text-align: left;
@@ -156,13 +162,13 @@ h1{
 }
 h2 {
     width: 100%;
-    /*padding: 2em 0 0 0;*/
     font-weight: 700;
     font-size: 1.3em;
     color: #4c5053;
     text-align: center;
 }
 .services ul {
+    width: auto;
     list-style-position: inside;
     text-indent: -1.5em; 
     margin-left: 1.5em;
@@ -185,19 +191,22 @@ h2 {
 /****************   REVIEWS   ****************/
 .reviews-slider-container {
     width: 100%;
-    height: 16em;
+    /*height: 16em;*/
+    height: auto;
     background-image: url('images/sunset.jpg');
-    background-size: 250%;
+    background-size: 300%;
     background-repeat: no-repeat;
-    background-position: 70% 52%;
+    background-position: 50% 40%;
 }
 .reviews-carousel {
     width: 100%;
-    height: 16em;
+    height: auto;
+    /*height: 16em;*/
 }
 .reviews-carousel-cell {
     width: 100%;
-    height: 16em;
+    /*height: 16em;*/
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,6 +230,7 @@ h2 {
     /*margin: 0 1em;*/
     line-height: 1.5em;
     width: 90%;
+    padding: 3em 0 5em 0;
 }
 /**************   END REVIEWS   **************/
 
@@ -396,6 +406,11 @@ footer {
 
 
 
+
+
+
+
+
 /**********   SCREEN >320px   **********/
 @media only screen and (min-width: 320px) {
 
@@ -413,11 +428,20 @@ footer {
 
     /**********   BANNER   **********/
     .banner {
-        background-position: 70% 30%;
-        width: 100%;
-        padding: 3em 0;
+        /*background-position: 70% 30%;*/
+        background-position: 80% 70%;
     }
     /**********   END BANNER   **********/
+
+    /**************    REVIEWS   **************/
+    .reviews-slider-container {
+        width: 100%;
+        background-position: 50% 50%;
+    }
+    .reviews-p {
+        padding: 3em 0 3em 0;
+    }
+    /**************   END REVIEWS   **************/
 
     /**********   MAP   **********/
     .map-container {
@@ -426,6 +450,12 @@ footer {
     /**********   END MAP   **********/
 }
 /**********   END SCREEN >320px   **********/
+
+
+
+
+
+
 
 
 
@@ -453,7 +483,8 @@ footer {
 
     /**********   BANNER   **********/
     .banner {
-        background-position: 65% 40%;
+        /*background-position: 65% 40%;*/
+        background-position: 50% 65%;
     }
     h1{
         font-size: 27px;
@@ -469,9 +500,6 @@ footer {
     /**********   END SERVICES   **********/
 
     /**********   REVIEWS   **********/
-    .reviews-slider-container {
-        background-position: 70% 56%;
-    }
     .reviews-p {
         /*margin: 0 1.8em;*/
         line-height: 1.6em;
@@ -503,6 +531,11 @@ footer {
 
 
 
+
+
+
+
+
 /**********   SCREEN >375px   **********/
 @media only screen and (min-width: 375px) {
 
@@ -513,7 +546,18 @@ footer {
     /**********   END NAVIGATION   **********/
 
 
+    /**********   BANNER   **********/
+    .banner {
+        /*background-position: 65% 40%;*/
+        /*background-position: 48% 75%;*/
+    }
+    /**********   END BANNER   **********/
+
+
     /**********   REVIEWS   **********/
+    .reviews-slider-container {
+        background-position: 50% 52%;
+    }
     .reviews-p {
         width: 85%;
     }
@@ -538,6 +582,11 @@ footer {
 
 
 
+
+
+
+
+
 /**********   SCREEN >400px   **********/
 @media only screen and (min-width: 400px) {
     /**********   NAVIGATION   **********/
@@ -557,14 +606,14 @@ footer {
 
     /**********    BANNER   **********/ 
     .banner {
-        background-position: 60% 25%;
-        width: 100%;
+        background-size: 200%;
+        background-position: 50% 50%;
     }
     h1{
         font-size: 2em;
         text-align: left;
         color: #fff;
-        padding: 0 1.5em 1.5em 1.5em;
+
         line-height: 1.5;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
@@ -575,7 +624,7 @@ footer {
 
     /**********   REVIEWS   **********/
     .reviews-slider-container {
-        background-position: 70% 58%;
+        background-position: 45% 55%;
     }
     /**********   END REVIEWS   **********/
 
@@ -633,9 +682,10 @@ footer {
             padding-top: 8em;
         }
         .banner {
-            background-size: 170%;
+            /*background-size: 170%;
             background-position: 60% 50%;
-            padding: 3em 0;
+            padding: 3em 0;*/
+            background-position: 60% 65%;
         }
         h1{
             width: 90%;
@@ -657,10 +707,9 @@ footer {
 
     /**********   REVIEWS   **********/
         .reviews-slider-container {
-            height: 16em;
+            /*height: 16em;*/
             background-size: 250%;
-            background-repeat: no-repeat;
-            background-position: 70% 60%;
+            background-position: 70% 56%;
         }
     /**********   END REVIEWS   **********/
 
@@ -700,9 +749,20 @@ footer {
 
 
 
+
+
+
+
+
 /**********   SCREEN >600px   **********/
 @media only screen and (min-width: 600px) {
     /**********   BANNER   **********/
+        .banner {
+            /*background-size: 170%;
+            background-position: 60% 50%;
+            padding: 3em 0;*/
+            background-position: 60% 63%;
+        }    
         h1{
             width: 90%;
             font-size: 40px;
@@ -713,10 +773,8 @@ footer {
 
     /**********   REVIEWS   **********/
         .reviews-slider-container {
-            height: 16em;
-            background-size: 250%;
-            background-repeat: no-repeat;
-            background-position: 65% 62%;
+            /*height: 16em;*/
+            background-position: 58% 59%;
         }
         .reviews-p {
             font-size: 1.2em;
@@ -799,21 +857,39 @@ footer {
 
 
 
+
+
+
+
+
 /**********   SCREEN >700px   **********/
 @media only screen and (min-width: 700px) {
     /*****************   BANNER   *****************/
         .banner {
-            background-size: 160%;
-            background-position: 60% 50%;
+            /*background-size: 120%;
+            background-position: 60% 70%;
+            padding: 6em 0;*/
+            background-size: 120%;
+            background-position: 70% 70%;
         }
     /*****************   BANNER   *****************/
 
 
 
 
+    /**********   SERVICES   **********/
+        .services {
+            display: flex;
+            justify-content: center;
+        }
+    /**********   END SERVICES   **********/
+
+
+
+
     /**********   REVIEWS   **********/
         .reviews-slider-container {
-            background-position: 70% 62%;
+            background-position: 58% 62%;
         }
         .reviews-p {
             width: 75%;
@@ -831,6 +907,11 @@ footer {
     /**********   END MAP   **********/
 }
 /**********   END SCREEN >700px   **********/
+
+
+
+
+
 
 
 
@@ -854,15 +935,33 @@ footer {
         h2 {
             font-size: 1.8em;
         }
+        .services {
+            width: 100%;
+        }
+        .services ul {
+            width: 100%;
+            margin: 0 1em;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         .services ul li {
             font-size: 1.2em;
+            text-indent: 0;
+            width: 20%;
+            list-style-type: none;
+            text-align: center;
+        }
+        .divider {
+            border-right: 1px solid #4c50533a;;
         }
     /**********   END SERVICES   **********/
 
 
 
+
     /**********   REVIEWS   **********/
-        .reviews-slider-container {
+        /*.reviews-slider-container {
             height: 20em;
         }
         .reviews-carousel {
@@ -870,7 +969,7 @@ footer {
         }
         .reviews-carousel-cell {
             height: 20em;
-        }
+        }*/
         .flickity-page-dots {
             bottom: .8em;
         }
@@ -960,6 +1059,36 @@ footer {
 
 
 
+
+
+
+
+/**********   SCREEN >900px   **********/
+@media only screen and (min-width: 900px) {
+    /**********   BANNER   **********/
+    .banner {
+        background-size: 120%;
+        background-position: 70% 78%;
+    }
+    /**********   END BANNER   **********/
+
+    /**********   REVIEWS   **********/
+    .reviews-slider-container {
+        background-position: 45% 64%;
+        background-size: 300%;
+    }
+    .reviews-p {
+        width: 80%;
+        max-width: 1000px;
+    }
+/**********   END REVIEWS   **********/
+}
+/**********   END SCREEN >900px   **********/
+
+
+
+
+
 /**********   SCREEN >1000px   **********/
 @media only screen and (min-width: 1000px) {
     /*****************   NAVIGATION   *****************/
@@ -996,25 +1125,32 @@ footer {
 
     
     /*****************   BANNER   *****************/
-        .banner {
-            background-size: 130%;
-            background-position: 70% 50%;
-            padding: 3em 0;
-        }
         h1{
             width: 95%;
+            font-size: 55px;
         }
     /*****************  END BANNER   *****************/
 
 
 
 
+    /*****************   SERVICES   *****************/
+        .services ul {
+            width: 90%;
+        }
+    /*****************   END SERVICES   *****************/
+
+
+
+
     /*****************   REVIEWS   *****************/
         .reviews-p {
-            width: 65%;
+            width: 70%;
+            max-width: 700px;
         }
         .reviews-slider-container {
-            background-position: 60% 64%;
+            background-size: 250%;
+            background-position: 45% 64%;
         }
     /*****************  END REVIEWS   *****************/
 
@@ -1022,14 +1158,27 @@ footer {
 
 
     /**********   ABOUT   **********/
+    .about-container {
+        display: flex;
+        justify-content: center;
+    }
+        .about-slider-container {
+            width: 90%;
+        }
         .about-info p {
             line-height: 1.85em;
+
         }
         .about-carousel {
-            width: 400px;
+            width: 50%;
+            margin-right: 10px;
+
         }
         .about-carousel-cell {
-            min-width: 400px;
+            min-width: 50%;
+        }
+        .about-img {
+            height: 22em;
         }
     /**********   END ABOUT   **********/
 
@@ -1037,8 +1186,15 @@ footer {
 
 
     /**********   GET IN TOUCH SECTION   **********/
+    .touch-container {
+        display: flex;
+        justify-content: center;
+    }
+    .touch {
+        width: 85%;
+    }
         .location, .hours {
-            width: 30%;
+            width: 33%;
         }
         .location th, .hours th {
             font-size: 1em;
@@ -1047,15 +1203,18 @@ footer {
             font-size: 1.2em;
         }
         .touch-button-container {
-            width: 30%;
+           width: 33%;
+           height: auto;
+           display: flex;
+           flex-wrap: wrap;
+           align-items: center;
         }
         .call-button-container, .email-button-container {
             width: 100%;
-            display: block;
         }
         a.touch-button {
-            height: 60px;
-            width: 150px;
+            height: 50px;
+            width: 200px;
             font-size: 12px;
         }
         .button-info {
@@ -1064,26 +1223,232 @@ footer {
         .request {
             font-size: .8em;
         }
-/**********   END GET IN TOUCH SECTION   **********/
+    /**********   END GET IN TOUCH SECTION   **********/
+
+
+
+
+    /**********   MAP SECTION   **********/
+        .map-container {
+            height: 22em;
+            background-size: 130%;
+            background-position: 52% 69%;
+        }
+    /**********   END MAP SECTION   **********/
+
+
+
 
     /**********   FOOTER SECTION   **********/
     footer {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
         height: auto;
         background-color: #4c5053;
         padding: 1.5em 0;
     }
-    .footer {
-        width: 100%;
-        font-size: 14px;
-        color: #f3f3f3;;
-        font-weight: 300;
-        text-align: center;
-    }
-    .email {
-        margin: 1em 0;
-    }
 /**********   END FOOTER SECTION   **********/
 }
+/**********   END SCREEN >1000px   **********/
+
+
+
+
+/**********   SCREEN >1100px   **********/
+@media only screen and (min-width: 1100px) {
+    /**********   BANNER   **********/
+    
+    h1{
+        width: 100%;
+        font-size: 55px;
+        /*max-width: 975px;*/
+        /*margin-left: 10%;*/
+
+    }
+    .banner {
+        /*background-size: 130%;
+        background-position: 50% 70%;*/
+        padding: 5em 0;
+        background-size: 120%;
+        background-position: 70% 83%;
+        
+    }
+    .button-container {
+        /*justify-content: left;
+        margin-left: 5em;*/
+    }
+    a.banner-button {
+        font-size: 1.7em;
+    }
+    /**********   END BANNER   **********/
+
+    /*****************   REVIEWS   *****************/
+    .reviews-slider-container {
+        background-position: 45% 64%;
+    }
+    /*****************  END REVIEWS   *****************/
+
+    /**********   ABOUT SECTION   **********/
+    .about-slider-container {
+        max-width: 1000px;
+    }
+    /**********   END ABOUT SECTION   **********/
+
+    /**********   GET IN TOUCH SECTION   **********/
+        .touch {
+            max-width: 1000px;
+        }
+    /**********   END GET IN TOUCH SECTION   **********/
+
+    /**********   MAP SECTION   **********/
+    .map-container {
+        height: 26em;
+        background-size: 125%;
+        background-position: 52% 66%;
+    }
+    /**********   END MAP SECTION   **********/
+}
+/**********   END SCREEN >1100px   **********/
+
+
+
+
+
+/**********   SCREEN >1200px   **********/
+@media only screen and (min-width: 1200px) {
+    /**********   BANNER   **********/
+    h1{
+        width: 95%;
+        font-size: 65px;
+        /*max-width: 1000px;*/
+        margin-left: 3%;
+    }
+    .banner {
+        /*background-size: 130%;
+        background-position: 50% 70%;*/
+        background-position: 70% 80%;
+        
+    }
+    /**********   END BANNER   **********/
+
+
+
+    /*****************   SERVICES   *****************/
+    .services ul {
+        width: 70%;
+    }
+/*****************   END SERVICES   *****************/
+
+
+
+    /*****************   REVIEWS   *****************/
+    .reviews-slider-container {
+        background-size: 200%;
+    }
+    .reviews-p {
+        padding: 4em 0 5em 0;
+    }
+    /*****************  END REVIEWS   *****************/
+}
+/**********   END SCREEN >1200px   **********/
+
+
+
+
+
+/**********   SCREEN >1300px   **********/
+@media only screen and (min-width: 1300px) {
+    /**********   BANNER   **********/
+    h1{
+        width: 95%;
+        font-size: 70px;
+        /*max-width: 1000px;*/
+    }
+    .banner {
+        /*background-size: 130%;
+        background-position: 50% 70%;*/
+        background-position: 70% 75%;
+        
+    }
+    /**********   END BANNER   **********/
+
+
+
+    /**********   MAP SECTION   **********/
+    .map-container {
+        height: 28em;
+        background-size: 120%;
+        background-position: 52% 66%;
+    }
+    /**********   END MAP SECTION   **********/
+}
+
+
+
+
+
+
+
+
+
+/**********   SCREEN >1500px   **********/
+@media only screen and (min-width: 1500px) {
+    /**********   BANNER   **********/
+    h1{
+        width: 95%;
+        font-size: 70px;
+        
+    }
+    .banner {
+        /*background-size: 130%;
+        background-position: 50% 70%;*/
+        background-position: 70% 75%;
+        padding: 7em 0;
+    }
+    /**********   END BANNER   **********/
+
+    /**********   MAP SECTION   **********/
+    .map-container {
+        height: 34em;
+        background-size: 120%;
+        background-position: 52% 66%;
+    }
+    /**********   END MAP SECTION   **********/
+}
+/**********   END SCREEN >1500px   **********/
+
+
+
+
+
+
+
+
+/**********   SCREEN >1700px   **********/
+@media only screen and (min-width: 1700px) {
+    /**********   BANNER   **********/
+    h1{
+        width: 95%;
+        font-size: 70px;
+        
+    }
+    .banner {
+        /*background-size: 130%;
+        background-position: 50% 70%;*/
+        background-position: 70% 75%;
+        padding: 7em 0;
+    }
+    /**********   END BANNER   **********/
+
+    /**********   MAP SECTION   **********/
+    .map-container {
+        height: 38em;
+        background-size: 120%;
+        background-position: 52% 66%;
+    }
+    /**********   END MAP SECTION   **********/
+}
+/**********   END SCREEN >1500px   **********/
