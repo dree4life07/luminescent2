@@ -275,11 +275,18 @@ h2 {
     width: auto;
     height: 16em;
 }
+.flickity-page-dots {
+    bottom: .5em;
+  }
 .flickity-page-dots .dot {
     width: 10px;
     height: 10px;
     opacity: 1;
+    background: #e8e3dc8e;
     border-radius: 100%;
+  }
+.flickity-page-dots .dot.is-selected {
+    background: #e8e3dc;
 }
 /**********   END ABOUT SECTION   **********/
 
@@ -783,44 +790,51 @@ footer {
 
 
 
-    /**********   ABOUT   **********/
-        .about-info h2 {
-            padding-top: 0;
-            text-align: left;
-        }
-        .about-info h4 {
-            width: auto;
-            text-align: left;
-            color: #4c5053;
-        }
-        .about-info p {
-            margin: 0;
-            padding: 1.5em 0 0 0;
-        }
-        .about-slider-container {
-            display: block;
-            width: 100%;
-            height: auto;
-            float: left;
-            padding: 3em 2em;
-            background-color: #f3f3f3;
-        }
-        .about-carousel {
-            width: 250px;
-            height: 16em;
-            float: left;
-            padding-right: 1em;
-        }
-        .about-carousel-cell {
-            display: flex;
-            justify-content: center;
-            min-width: 250px;
-            height: 16em;
-        }
-        .about-img {
-            width: auto;
-            height: 16em;
-        }
+        /**********   ABOUT   **********/
+            .about-info h2 {
+                padding-top: 0;
+                text-align: left;
+            }
+            .about-info h4 {
+                width: auto;
+                text-align: left;
+                color: #4c5053;
+            }
+            .about-info p {
+                margin: 0;
+                padding: 1.5em 0 0 0;
+            }
+            .about-slider-container {
+                display: block;
+                width: 100%;
+                max-width: 1000px;
+                height: auto;
+                float: left;
+                padding: 3em 2em;
+                background-color: #f3f3f3;
+            }
+            .about-carousel {
+                width: 50%;
+                height: auto;
+                min-height: 16em;
+                float: left;
+                padding-right: 1em;
+            }
+            .about-carousel-cell {
+                display: flex;
+                justify-content: center;
+                width: auto;
+                /*min-width: 250px;*/
+                /*min-height: 16em;
+                height: auto;*/
+                height: 16em;
+            }
+            .about-img {
+                width: auto;
+                /*min-height: 16em;
+                height: auto;*/
+                height: 16em;
+            }
     /**********   END ABOUT   **********/
 
 
@@ -995,11 +1009,11 @@ footer {
             line-height: 1.6em;
         }
         .about-carousel {
-            width: 325px;
-            height: 20em;
+            /*width: 325px;*/
+            /*height: 20em;*/
         }
         .about-carousel-cell {
-            min-width: 325px;
+            /*min-width: 325px;*/
             height: 20em;
         }
         .about-img {
@@ -1167,15 +1181,14 @@ footer {
         }
         .about-info p {
             line-height: 1.85em;
-
         }
-        .about-carousel {
+        /*.about-carousel {
             width: 50%;
-            margin-right: 10px;
+            margin-right: 10px;*/
 
         }
-        .about-carousel-cell {
-            min-width: 50%;
+        /*.about-carousel-cell {
+            min-width: 50%;*/
         }
         .about-img {
             height: 22em;
