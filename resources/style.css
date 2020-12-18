@@ -363,7 +363,7 @@ a.touch-button {
     cursor: pointer;
     transition: .3s;
 }
-a.call-touch:hover {
+a.touch-button:hover {
     background-color: #d3d3d3;
     border: 1px solid #d3d3d3;
 }
@@ -572,7 +572,7 @@ footer {
 
 
     /**********   GET IN TOUCH   **********/
-    a.call-button, .menu-icon, .call-info, {
+    a.call-button, .menu-icon, .call-info {
         font-size: 16px;
     }
     /**********   END GET IN TOUCH   **********/
@@ -841,20 +841,20 @@ footer {
 
 
     /**********   GET IN TOUCH SECTION   **********/
-        .location, .hours {
-            width: 45%;
-        }
-        .touch-button-container {
-            display: flex;
-            justify-content: center;
-        }
-        .call-button-container, .email-button-container {
-            width: 40%;
-            height: auto;
-            display: flex;
-            align-items: center;
-        }
-    /**********   END GET IN TOUCH SECTION   **********/
+    .location, .hours {
+        width: 45%;
+    }
+    .touch-button-container {
+        display: flex;
+        justify-content: center;
+    }
+    .call-button-container, .email-button-container {
+        width: 40%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+/**********   END GET IN TOUCH SECTION   **********/
 
 
 
@@ -1025,27 +1025,27 @@ footer {
 
 
     /**********   GET IN TOUCH SECTION   **********/
-        .location, .hours {
-            width: 40%;
-        }
-        .location th, .hours th {
-            font-size: 1em;
-        }
-        .location, .hours {
-            font-size: 1.2em;
-        }
-        a.touch-button {
-            height: 60px;
-            width: 200px;
-            font-size: 12px;
-        }
-        .button-info {
-            font-size: 1em;
-        }
-        .request {
-            font-size: .8em;
-        }
-    /**********   END GET IN TOUCH SECTION   **********/
+    .location, .hours {
+        width: 40%;
+    }
+    .location th, .hours th {
+        font-size: 1em;
+    }
+    .location, .hours {
+        font-size: 1.2em;
+    }
+    a.touch-button {
+        height: 60px;
+        width: 200px;
+        font-size: 12px;
+    }
+    .button-info {
+        font-size: 1em;
+    }
+    .request {
+        font-size: .8em;
+    }
+/**********   END GET IN TOUCH SECTION   **********/
 
 
 
